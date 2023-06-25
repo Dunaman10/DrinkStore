@@ -17,6 +17,7 @@ html {
 body {
   font-family: "Chakra Petch", sans-serif;
   background-color: var(--bg);
+  width: 100%;
 }
 
 /* Navbar */
@@ -143,10 +144,10 @@ body {
 
 /* Product */
 .product .row {
-  width: 90%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 5px;
+  grid-gap: 15px;
   margin: 0 auto;
 }
 
@@ -171,7 +172,7 @@ body {
 
 .contact .row form {
   flex: 1 1 45rem;
-  padding: 5rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -184,7 +185,7 @@ body {
 }
 
 .contact .row form .input-group input {
-  width: 100%;
+  width: 90%;
   padding: 1.5rem;
   font-size: 1.5rem;
   color: #ffff;
@@ -241,7 +242,6 @@ footer {
   }
 
   .home button {
-    padding: 1rem;
     color: black;
     border-radius: 10px;
     margin-top: 18rem;
@@ -255,7 +255,14 @@ footer {
   }
 
   .about .row .col-1 {
-    padding: 1.5rem;
+    padding: 0 3rem;
+  }
+
+  .about .row .col-2 img {
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
   }
 
   .contact .row {
@@ -273,4 +280,12 @@ footer {
 
 /* Mobile */
 @media (max-width: 450px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .home button {
+    margin-left: -16rem;
+    cursor: pointer;
+  }
 }
